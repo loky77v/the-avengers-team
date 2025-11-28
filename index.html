@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE AVENGERS - Team Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Homepage -->
+    <div id="homepage" class="page active">
+        <!-- Dark Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">THE AVENGERS</div>
+                    <nav class="header-nav">
+                        <a href="#home" class="nav-item active">Home</a>
+                        <a href="#team" class="nav-item">Team</a>
+                        <a href="#about" class="nav-item">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="group-title">THE AVENGERS</h1>
+                <p class="group-subtitle">Meet the Team</p>
+                
+                <div class="members-grid" id="membersList">
+                    <!-- Members will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">About THE AVENGERS</h3>
+                        <p class="footer-description">
+                            THE AVENGERS represents a collective of talented and driven BCA Final Year students 
+                            who have demonstrated exceptional intelligence and expertise in the realm of website 
+                            development. Our team combines technical proficiency with creative innovation, 
+                            showcasing advanced skills in modern web technologies, responsive design, and 
+                            user-centric development practices. As final year students, we bring together 
+                            years of academic knowledge and practical experience to deliver professional-grade 
+                            digital solutions that stand as a testament to our commitment to excellence in 
+                            computer applications.
+                        </p>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 THE AVENGERS - BCA Final Year Students. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profilepage" class="page">
+        <div class="profile-container">
+            <div class="container">
+                <button class="back-button" onclick="router.goHome()">← Back to Home</button>
+                
+                <div class="profile-content" id="profileContent">
+                    <!-- Profile content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="profiles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
